@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS custom ของคุณ */
+.break-inside-avoid {
+  break-inside: avoid;
+}
+
+.masonry {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+.grid-sizer,
+.masonry-item {
+  width: 100%;
+}
+
+/* Responsive grid */
+@media (min-width: 640px) {
+  .grid-sizer,
+  .masonry-item { width: calc((100% - 16px)/2); }
+}
+@media (min-width: 1024px) {
+  .grid-sizer,
+  .masonry-item { width: calc((100% - 32px)/3); }
+}
+@media (min-width: 1280px) {
+  .grid-sizer,
+  .masonry-item { width: calc((100% - 48px)/4); }
+}
+
+.gutter-sizer { width: 16px; }
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

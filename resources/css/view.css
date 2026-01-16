@@ -1,0 +1,80 @@
+@import './fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* ===== Justified Grid (สไตล์ Facebook Album) ===== */
+    #grid {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      width: 100vw;
+      margin: 0;
+      padding-left: 8px;
+      padding-right: 8px;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+
+    .jg-row {
+      display: flex;
+      justify-content: center;
+      /* จัดแถวให้อยู่พอดีจอ */
+      gap: 8px;
+      /* ช่องว่างระหว่างรูป */
+      margin-bottom: 8px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .jg-item {
+      flex: 0 0 auto;
+      overflow: hidden;
+      /* border-radius: 0.5rem; */
+      /* background: #f1f5f9; */
+      position: relative;
+    }
+
+    .jg-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .jg-item img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Responsive row target height */
+    :root {
+      --rowH: 220;
+    }
+
+    @media (max-width: 1279px) {
+      :root {
+        --rowH: 200;
+      }
+    }
+
+    @media (max-width: 1023px) {
+      :root {
+        --rowH: 180;
+      }
+    }
+
+    @media (max-width: 639px) {
+      :root {
+        --rowH: 160;
+      }
+    }
+
+    /* ปรับ container ให้อยู่ชิดซ้ายขวา */
+    main>.max-w-7xl {
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }

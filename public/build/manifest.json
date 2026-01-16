@@ -1,0 +1,73 @@
+{
+  "_imagesloaded-CyESsmFl.js": {
+    "file": "assets/imagesloaded-CyESsmFl.js",
+    "name": "imagesloaded"
+  },
+  "css/app.css": {
+    "file": "assets/style-CvNDtUOe.css",
+    "src": "css/app.css",
+    "isEntry": true,
+    "name": "style",
+    "names": [
+      "style.css"
+    ]
+  },
+  "css/gallery.css": {
+    "file": "assets/style1-C2rvXgph.css",
+    "src": "css/gallery.css",
+    "isEntry": true,
+    "name": "style1",
+    "names": [
+      "style1.css"
+    ]
+  },
+  "css/view.css": {
+    "file": "assets/style2-zSdk3R7n.css",
+    "src": "css/view.css",
+    "isEntry": true,
+    "name": "style2",
+    "names": [
+      "style2.css"
+    ]
+  },
+  "fonts/NotoSansThai-Bold.woff2": {
+    "file": "assets/NotoSansThai-Bold-Cs5zdG4N.woff2",
+    "src": "fonts/NotoSansThai-Bold.woff2"
+  },
+  "fonts/NotoSansThai-Medium.woff2": {
+    "file": "assets/NotoSansThai-Medium-Da71X9Tm.woff2",
+    "src": "fonts/NotoSansThai-Medium.woff2"
+  },
+  "fonts/NotoSansThai-Regular.woff2": {
+    "file": "assets/NotoSansThai-Regular-4v_4JK9U.woff2",
+    "src": "fonts/NotoSansThai-Regular.woff2"
+  },
+  "js/app.js": {
+    "file": "assets/app-CsoKiTlB.js",
+    "name": "app",
+    "src": "js/app.js",
+    "isEntry": true,
+    "imports": [
+      "js/gallery.js",
+      "_imagesloaded-CyESsmFl.js"
+    ]
+  },
+  "js/gallery.js": {
+    "file": "assets/gallery-C32lysFc.js",
+    "name": "gallery",
+    "src": "js/gallery.js",
+    "isEntry": true,
+    "imports": [
+      "_imagesloaded-CyESsmFl.js"
+    ]
+  },
+  "js/view.js": {
+    "file": "assets/view-8_xLX0hB.js",
+    "name": "view",
+    "src": "js/view.js",
+    "isEntry": true,
+    "imports": [
+      "_imagesloaded-CyESsmFl.js"
+    ]
+  }
+}

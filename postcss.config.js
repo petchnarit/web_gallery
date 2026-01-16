@@ -1,0 +1,16 @@
+// module.exports = {
+//   plugins: {
+//     '@tailwindcss/postcss': {},
+//     autoprefixer: {},
+//   },
+// }
+module.exports = {
+  plugins: {
+    tailwindcss: {},   // ใช้ local tailwind
+    autoprefixer: {},
+  },
+};
+
+
+
+
